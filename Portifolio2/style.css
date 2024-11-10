@@ -1,0 +1,422 @@
+/*Estilo*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: black;
+    height: 100vh;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.kayan-contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: rgb(40, 40, 184);
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    box-shadow: 0px 0px 8px #000;
+    transform: scale(1.05);
+}
+
+h2.titulo {
+    color: #fff;
+    font-size: 38px;
+    text-align: center;
+}
+
+h2.titulo span {
+    color: blue;
+}
+
+/*Cabeçalho*/
+.logo {
+    width: 60%;
+    padding-right: 25%;
+}
+
+header {
+    padding: 40px 4%;
+}
+
+header>.interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+header a {
+    color: #5c5c5c;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover {
+    color: #fff;
+    transform: scale(1.05);
+
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+/*ESTILO TOPO SITE*/
+section.toposite {
+    padding: 40px 4%;
+}
+
+section.toposite .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.toposite h1 {
+    color: #fff;
+    font-size: 42px;
+    line-height: 40px;
+}
+
+.toposite .txt-topo-site h1 span {
+    color: blue;
+}
+
+.toposite .txt-topo-site p {
+    color: #fff;
+    margin: 40px 0;
+}
+
+.toposite .img-topo-site img {
+    width: 200%;
+    margin: 20px 50px;
+    border-radius: 25%;
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 30px;
+    }
+}
+
+/* ESTILO DAS ESPECIALIDADES */
+section.especialidades {
+    padding: 40px 4%;
+
+}
+
+section.especialidades .flex {
+    gap: 60px;
+
+}
+
+.especialidades .especialidades-box {
+    color: #fff;
+    padding: 40px;
+    margin-top: 45px;
+    border-radius: 20px;
+    transition: .2s;
+}
+
+.especialidades .especialidades-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #ffffff67;
+}
+
+.especialidades .especialidades-box i {
+    font-size: 70px;
+    color: blue;
+
+}
+
+.especialidades .especialidades-box h3 {
+    font-size: 26px;
+    margin: 15px 0;
+}
+
+.especialidades .titulo {
+    padding-top: 14%;
+
+}
+
+.especialidades .especialidades-box .html {
+    width: 60%;
+    padding-right: 70px;
+    margin: 0 0 0 25px;
+}
+
+.especialidades .especialidades-box .css {
+    width: 72%;
+    padding-right: 60px;
+    padding-top: 10px;
+}
+
+.especialidades .especialidades-box .python {
+    width: 30%;
+    padding-top: 10px;
+}
+
+/*SOBRE*/
+
+section.sobre {
+    padding: 80px 4%;
+}
+
+.sobre .img-sobre img {
+    width: 100%;
+    border-radius: 30px;
+}
+
+section.sobre .flex {
+    gap: 60px;
+    align-items: center;
+}
+
+.sobre .txt-sobre {
+    color: #fff;
+
+}
+
+.sobre .txt-sobre h2 {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.sobre .txt-sobre h2 span {
+    color: blue;
+    display: block;
+}
+
+.sobre .txt-sobre p {
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.kayan-social button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: blue;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+
+}
+
+/*PORTFOLIO*/
+section.portfolio {
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+
+}
+
+section.portfolio .flex {
+    justify-content: space-around;
+    margin-top: 80px;
+
+}
+
+.img-port {
+    width: 360px;
+    height: 460px;
+    background-color: blue;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 5s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+
+
+}
+
+.img-port:hover {
+    background-position: 100% 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000b8;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 24%;
+    color: #fff;
+    opacity: 0;
+    transition: .5s;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+/*Footer*/
+
+footer {
+    padding: 60px 4%;
+}
+
+footer .flex {
+    justify-content: space-between;
+}
+
+footer .line-footer {
+    padding: 20px 0;
+
+}
+
+.borda {
+    border-top: 2px solid #0400ec;
+}
+
+footer .line-footer p i {
+    color: #0400ec
+}
+
+footer .line-footer p i {
+    font-size: 22px;
+}
+
+footer .line-footer p a {
+    color: #fff;
+}
+
+.logo-footer2 {
+    width: 40%;
+
+}
+
+@media screen and (max-width:1259px) {
+
+    /*GERAL*/
+    .flex {
+        flex-direction: column;
+    }
+
+    .toposite .flex {
+        flex-direction: column-reverse;
+    }
+
+    h2.titulo {
+        font-size: 34px;
+        line-height: 30px;
+    }
+
+    /*cabeçalho*/
+    section.toposite .flex {
+        gap: 40px;
+    }
+
+    .menudesktop,
+    .kayan-contato {
+        display: none;
+    }
+
+    /*toposite*/
+    section.toposite {
+        padding: 20px 8%;
+    }
+
+    .toposite h1 {
+        font-size: 30px;
+    }
+
+    /*IMG-TOPO-SITE*/
+    .toposite .img-topo-site img {
+        width: 80%;
+        margin: 20px 30px;
+
+    }
+
+    /* ESTILO DAS ESPECIALIDADES */
+    section.especialidades {
+        padding: 40px 8%;
+
+    }
+
+    /*SOBRE*/
+
+    section.sobre {
+        padding: 80px 8%;
+    }
+
+    .sobre .txt-sobre h2 {
+        font-size: 36px;
+        line-height: 35px;
+        text-align: center;
+
+    } 
+    .kayan-social{
+       text-align: center;
+    
+    }
+    .img-sobre img{
+        width: 100%;
+    }
+
+    /*PORTFOLIO*/
+
+    section.portfolio {
+        padding: 80px 8%;
+
+    }
+    .img-port {
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+    section.portfolio .flex {
+        gap: 60px;
+    }   
+    /*Footer*/
+
+    footer .flex {
+        flex-direction: column;
+    }
+    footer .line-footer {   
+        text-align: center;
+    
+    }
+    .logo-footer2{
+        padding: 25px 0;
+    }
+}
