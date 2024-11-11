@@ -420,3 +420,10 @@ footer .line-footer p a {
         padding: 25px 0;
     }
 }
+
+
+@media screen and (max-width: 2443px){
+    .img-topo-site{
+        margin-right: 10%;
+    }
+}
